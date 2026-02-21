@@ -1,0 +1,47 @@
+body {
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.bg {
+    background: url("https://wallup.net/wp-content/uploads/2019/09/648651-anime-beautiful-landscape-nature-scan-forest-sunlight-lake.jpg");
+    background-position: center top;
+    filter: blur(3px);
+    position: absolute;
+    inset: -10px;
+    z-index: -1;
+}
+
+.header-h1 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 15px;
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 18px;
+        transition: background-color 300ms ease-in-out;
+        padding: 3px;
+    }
+
+
+}
+
+.twitch {
+    background: purple;
+}
+
+.vk {
+    background: blue;
+}
+
+.hover-black:hover {
+    background: black;
+}
