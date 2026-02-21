@@ -13,19 +13,6 @@ body {
     z-index: -1;
 }
 
-@font-face {
-    font-family: Anortic;
-    src: url(fonts/AnorthicDemo.otf);
-}
-
-.header-h1 {
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 32px;
-    font-family: "Anortic";
-    color: whitesmoke;
-}
-
 .wrapper {
     display: flex;
     justify-content: center;
@@ -55,4 +42,26 @@ body {
     background: black;
     transform: translateY(-4px);
     border: white 1px solid;
+}
+
+.shadow-dance-text {
+    text-align: center;
+    font-size: 4vw;
+    font-family: "Permanent Marker";
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 5px 5px 0 purple, 10px 10px 0 blue;
+    animation: shadow-dance 2s infinite;
+}
+
+@keyframes shadow-dance {
+
+    0%,
+    100% {
+        text-shadow: 5px 5px 0 purple, 10px 10px 0 blue;
+    }
+
+    50% {
+        text-shadow: -5px -5px 0 blue, -10px -10px 0 purple;
+    }
 }
