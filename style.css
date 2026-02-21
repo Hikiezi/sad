@@ -3,15 +3,26 @@ body {
     overflow: hidden;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .bg {
     position: absolute;
     inset: 0px;
     z-index: -1;
 }
 
+@font-face {
+    font-family: Anortic;
+    src: url(fonts/AnorthicDemo.otf);
+}
+
 .header-h1 {
     text-align: center;
-    font-family: 'Franklin Gothic Medium';
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-family: "Anortic";
     color: whitesmoke;
 }
 
@@ -22,10 +33,10 @@ body {
     gap: 15px;
 
     img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 18px;
-        transition: background-color 300ms ease-in-out;
+        transition: all 175ms ease-in-out;
         padding: 3px;
     }
 
@@ -42,4 +53,6 @@ body {
 
 .hover-black:hover {
     background: black;
+    transform: translateY(-4px);
+    border: white 1px solid;
 }
