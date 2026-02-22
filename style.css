@@ -57,6 +57,7 @@ body {
 @media screen and (max-width:768px) {
     .shadow-dance-text {
         font-size: 8vw;
+        margin-top: 100px;
     }
     
 }
