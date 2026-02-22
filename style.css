@@ -54,6 +54,13 @@ body {
     animation: shadow-dance 2s infinite;
 }
 
+@media screen and (max-width:768px) {
+    .shadow-dance-text {
+        font-size: 8vw;
+    }
+    
+}
+
 @keyframes shadow-dance {
 
     0%,
